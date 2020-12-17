@@ -3,7 +3,7 @@
 <div class="column is-4 is-offset-4">
 	<h3 class="title">Login</h3>
 	<div class="box">
-		{% with messages= get_flashed_messages() %}
+		{% with messages = get_flashed_messages() %}
 		{% if messages %}
 			<div class="notification is-danger">
 				{{ messages[0] }}
@@ -13,12 +13,12 @@
 		<form action="login" method="POST">
 			<div class="field">
 				<div class="control">
-					<input type="email" class="input is-large" name="email" placeholder="email@e.com">
+					<input type="email" class="input is-large" name="email" placeholder="email@e.com" autofocus="">
 				</div>
 			</div>
 			<div class="field">
 				<div class="control">
-					<input type="email" class="input is-large" name="email" placeholder="email@e.com">
+					<input type="password" class="input is-large" name="password" placeholder="Your Password">
 				</div>
 			</div>
 			<div class="field">
